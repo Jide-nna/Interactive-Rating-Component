@@ -59,7 +59,11 @@ body{
     font-size: 15px;
 }
 #container .rate button:hover {
-    background: rgb(131, 86, 3);
+    background: var(--Light-Grey);
+    cursor: pointer;
+}
+#container .rate button:active {
+    background: hsl(25, 97%, 53%);
     cursor: pointer;
 }
 #container .submit button {
@@ -69,13 +73,86 @@ body{
     border: hidden;
     padding: 8px;
     color: white;
-    background: rgb(247, 143, 8);
+    background: hsl(25, 97%, 53%);
     text-transform: uppercase;
     font-size: 15px;
 }
 #container .submit button:hover {
     color: rgb(131, 86, 3);
     background: white;
+}
+/* THANK YOU STATE*/
+#contain {
+    visibility: hidden;
+    margin-left: 30%;
+    margin-top: 15%;
+    box-shadow: 4px 4px 4px var(--Very-Dark-Blue);
+    width: 27%;
+    background: var(--Dark-Blue);
+    border-radius: 20px;
+    padding: 25px;
+}
+#contain .image img {
+    margin-left: 70px;
+    width: 40%;
+    height: 80px;
+}
+#contain .thanks{
+    text-align: center;
+    margin-top: 20px;
+    padding: 2%;
+    margin-left: 55px;
+    width: 50%;
+    background: hsl(215, 15%, 24%);
+    box-shadow: 4px 4px 4px var(--Dark-Blue);
+    border-radius: 15px;
+}
+#contain .words {
+    color: white;
+    text-align: center;
+}
+#contain .words h1 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+#contain .words p {
+    margin-top: 20px;
+    opacity: 50%;
+}
+
+
+
+@media (max-width: 2560px) {
+    #contain {
+    margin-left: 20%;
+    }
+    #contain .image {
+        margin-left: 20%;
+    }
+    #contain .thanks {
+        margin-left: 25%;
+        padding: 5px;
+    }
+    #contain .words p {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1440px) {
+    #contain .image {
+        margin-left: 10%;
+    }
+    #contain .words p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1024px) {
+    #contain {
+        width: 40%;
+        margin-left: 15%;
+    }
+}
+@media (max-width: 768px) {
+    
 }
 footer {
     margin-top: 60px;
