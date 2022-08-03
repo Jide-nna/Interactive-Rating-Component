@@ -81,9 +81,13 @@ body{
     color: rgb(131, 86, 3);
     background: white;
 }
+#container .submit button:active {
+    color: rgb(131, 86, 3);
+    background: white;
+}
 /* THANK YOU STATE*/
 #contain {
-    visibility: hidden;
+    visibility: hdden;
     margin-left: 30%;
     margin-top: 15%;
     box-shadow: 4px 4px 4px var(--Very-Dark-Blue);
