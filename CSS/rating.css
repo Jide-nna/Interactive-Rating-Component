@@ -168,7 +168,7 @@ footer .attribution a {
 }
 @media only screen and (max-width: 1440px) {
     #container {
-        margin-left: 30%;
+        margin-left: 35%;
     }
     #container .head {
         padding: 15px;
@@ -178,8 +178,8 @@ footer .attribution a {
         gap:2%;
     }
     #contain {
-        width: 50%;
-        margin-left: 25%;
+        width: 30%;
+        margin-left: 35%;
     }
     footer {
         margin-left: 30%;
