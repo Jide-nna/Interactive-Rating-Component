@@ -16,7 +16,7 @@ body{
     background: var(--Very-Dark-Blue);
 }
 #container {
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: 10%;
     box-shadow: 4px 4px 4px var(--Very-Dark-Blue);
     width: 30%;
@@ -87,17 +87,17 @@ body{
 }
 /* THANK YOU STATE*/
 #contain {
-    visibility: hdden;
-    margin-left: 30%;
-    margin-top: 15%;
+    display: none;
+    margin-left: 35%;
+    margin-top: 10%;
     box-shadow: 4px 4px 4px var(--Very-Dark-Blue);
-    width: 27%;
+    width: 30%;
     background: var(--Dark-Blue);
     border-radius: 20px;
     padding: 25px;
 }
 #contain .image img {
-    margin-left: 70px;
+    margin-left: 25%;
     width: 40%;
     height: 80px;
 }
@@ -106,7 +106,7 @@ body{
     margin-top: 20px;
     padding: 2%;
     margin-left: 55px;
-    width: 50%;
+    width: 70%;
     background: hsl(215, 15%, 24%);
     box-shadow: 4px 4px 4px var(--Dark-Blue);
     border-radius: 15px;
@@ -123,29 +123,21 @@ body{
     margin-top: 20px;
     opacity: 50%;
 }
-
-
-
-@media (max-width: 2560px) {
-    #contain {
-    margin-left: 20%;
-    }
-    #contain .image {
-        margin-left: 20%;
-    }
-    #contain .thanks {
-        margin-left: 25%;
-        padding: 5px;
-    }
-    #contain .words p {
-        font-size: 28px;
-    }
+footer {
+    margin-top: 60px;
+    color: white;
+    margin-left: 30%;
 }
+footer .attribution a {
+    color: rgb(247, 143, 8);
+    text-decoration: none;
+}
+
 @media (max-width: 1440px) {
-    #contain .image {
+    #container .image {
         margin-left: 10%;
     }
-    #contain .words p {
+    #container .words p {
         font-size: 25px;
     }
 }
@@ -158,18 +150,10 @@ body{
 @media (max-width: 768px) {
     
 }
-footer {
-    margin-top: 60px;
-    color: white;
-    margin-left: 30%;
-}
-footer .attribution a {
-    color: rgb(247, 143, 8);
-    text-decoration: none;
-}
-@media (max-width:2560px) {
+
+@media only screen and (max-width: 2560px) {
     #container {
-        margin-left: 15%;
+        margin-left: 30%;
     }
     #container .head {
         padding: 15px;
@@ -182,11 +166,25 @@ footer .attribution a {
         padding: 20px;
         width: 20%;
     }
+    #contain {
+        margin-left: 30%;
+        }
+        #contain .image {
+            margin-left: 5%;
+            width: 100%;
+        }
+        #contain .thanks {
+            margin-left: 15%;
+            padding: 5px;
+        }
+        #contain .words p {
+            font-size: 28px;
+        }
     footer {
-        margin-left: 20%;
+        margin-left: 35%;
     }
 }
-@media (max-width:1440px) {
+@media only screen and (max-width: 1440px) {
     #container {
         margin-left: 30%;
     }
@@ -201,7 +199,7 @@ footer .attribution a {
         margin-left: 30%;
     }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     #container {
         width: 40%;
         margin-left: 30%;
@@ -211,7 +209,7 @@ footer .attribution a {
         margin-left: 30%;
     }
 }
- @media (max-width:768px) {
+@media only screen and (max-width: 768px) {
     #container {
         width: 50%;
         margin-left: 25%;
@@ -221,11 +219,15 @@ footer .attribution a {
         padding: 13px;
         width: 15%;
     }
+    #contain {
+        width: 50%;
+        margin-left: 25%;
+    }
     footer {
         margin-left: 25%;
     }
  }
- @media (max-width:500px) {
+ @media only screen and (max-width: 600px) {
     #container {
         width: 60%;
         margin: 20%;
@@ -251,14 +253,21 @@ footer .attribution a {
         padding: 13px;
         font-size: 15px;
     }
+    #contain {
+        width: 65%;
+        margin-left: 20%;
+    }
+    #contain .words p {
+        font-size: 20px;
+    }
     footer {
         text-align: center;
         margin-left: 20%;
         margin-top: 25px;
-        width: 60%;
+        width: 70%;
     }
 }
-    @media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
         #container {
             width: 60%;
             padding: 10px;
@@ -271,6 +280,10 @@ footer .attribution a {
         #container .rate button {
             padding: 10px;
             font-size: 12px;
+        }
+        #contain {
+            width: 100%;
+            margin-left: 0%;
         }
     }
     @media (max-width: 320px) {
@@ -314,6 +327,17 @@ footer .attribution a {
         #container .rate button {
             padding: 5%;
             font-size: 8px;
+        }
+        #contain {
+            width: 100%;
+            margin-left: 0;
+        }
+        #contain .thanks {
+            width: 100%;
+            margin-left: 5%;
+        }
+        #contain .words p {
+            font-size: 15px;
         }
         footer {
             font-size: 10px;
